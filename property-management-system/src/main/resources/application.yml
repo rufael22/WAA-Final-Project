@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: property-management-service
+
+  datasource:
+    password: postgres
+    url: jdbc:postgresql://localhost:5432/project-property-db
+    username: postgres
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+        format_sql: true
+    show-sql: true
+    defer-datasource-initialization: true
+
+  sql:
+    init:
+      mode: always
+
+
+  main:
+    allow-bean-definition-overriding: true
+
+
+server:
+  port: 8080
+
+mail:
+  host: smtp.gmail.com
+  port: 587
+  email: miu.property.portal@gmail.com
+  #password: ${EMAIL_PASSWORD}
+  password: test
+
+
