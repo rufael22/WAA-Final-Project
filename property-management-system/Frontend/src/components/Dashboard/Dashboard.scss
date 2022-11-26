@@ -1,0 +1,67 @@
+.dashboard {
+  .card {
+    padding: 10px;
+    height: 100%;
+
+    &.big > div {
+      padding-left: 0;
+      padding-right: 0
+    }
+
+    .card-title-block {
+      text-align: center;
+
+      .card-title-text {
+        color: rgb(76, 215, 102);
+        font-weight: bold;
+        font-size: 1.4em;
+      }
+    }
+
+    .card-desc {
+      text-align: center;
+    }
+
+    .card-details {
+      display: flex;
+      margin-top: 20px;
+
+      .left-block,
+      .right-block {
+        min-width: 66px;
+
+        .number {
+          display: block;
+          font-weight: bold;
+        }
+
+        .text {
+          display: block;
+        }
+      }
+
+      .line {
+        width: 1px;
+        height: auto;
+        margin: 0 15px;
+        background: #000;
+
+        span {
+          border-color: rgb(51, 51, 51);
+          height: 44px;
+          width: 1px
+        }
+      }
+
+      .left-block {
+        text-align: right;
+        width: calc(50% - 7px)
+      }
+
+      .right-block {
+        text-align: left;
+        width: calc(50% - 7px)
+      }
+    }
+  }
+}

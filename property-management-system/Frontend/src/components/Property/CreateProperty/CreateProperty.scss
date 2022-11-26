@@ -1,0 +1,23 @@
+h4 {
+  &.model-header {
+    margin-bottom: 4px;
+    border-bottom: 1px solid #1A97F5;
+  }
+}
+.grid {
+  border-bottom: 0;
+}
+p.capitalize::first-letter, p.Mui-error::first-letter {
+  text-transform: capitalize !important;
+}
+
+.picture-capture {
+  padding: 5px 0;
+  margin: 10px 0;
+
+  li {
+    list-style: none;
+    padding: 5px;
+    margin: 5px;
+  }
+}
